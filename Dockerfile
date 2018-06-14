@@ -3,12 +3,14 @@ LABEL maintainer="Arun Mittal - mittal.talk@gmail.com"
 
 ARG PORT=80 
 ARG HOSTNAME=${HOSTNAME}
+ARG SERVER_TYPE=${SERVER_TYPE}
 
 ENV DOCKERIZE_VERSION=v0.6.1 \
   HOSTNAME=${HOSTNAME} \
   PORT=${PORT} \
   EMAIL_FROM=mittal.talk@gmail.com \
-  SMTP_HOSTNAME=10.253.1.76
+  SMTP_HOSTNAME=10.253.1.76 \
+  SERVER_TYPE=${SERVER_TYPE}
 
 RUN \
   ## install dockerize
@@ -26,7 +28,5 @@ RUN node bin/build.js dist
 #RUN cd /opt/cronicle && chmod +x -R bin/*.sh
 
 EXPOSE ${PORT}
-
-VOLUME [ "/opt/cronicle/conf" ]
 
 CMD [ "sh", "/opt/cronicle/bin/server.sh", "master" ]

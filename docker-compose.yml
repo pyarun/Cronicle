@@ -1,0 +1,19 @@
+version: '3'
+
+services:
+
+  nodejs:
+    build:
+      context: .
+    volumes:
+      - vecron-conf:/opt/cronicle/conf
+      - vecron-data:/opt/cronicle/data
+    environment:
+      - HOSTNAME=$HOSTNAME
+      - PORT=80
+      - SERVER_TYPE=$SERVER_TYPE
+    ports:
+      - 80:80
+volumes:
+  - vecron-conf
+  - vecron-data
