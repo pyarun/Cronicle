@@ -54,7 +54,8 @@
 		"pixl-server-storage": "^2.0.1",
 		"pixl-server-web": "^1.1.2",
 		"pixl-server-api": "^1.0.1",
-		"pixl-server-user": "^1.0.8"
+		"pixl-server-user": "^1.0.8",
+		"scp2":"0.5.0"
 	},
 	"devDependencies": {
 		"pixl-unit": "^1.0.9"
