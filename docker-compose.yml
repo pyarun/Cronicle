@@ -15,5 +15,5 @@ services:
     ports:
       - 80:80
 volumes:
-  - vecron-conf
-  - vecron-data
+  vecron-conf:
+  vecron-data:
