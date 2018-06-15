@@ -13,23 +13,6 @@
 				"admin": 1
 			}
 		} ],
-		[ "listPush", "global/plugins", {
-			"id": "ftransfer",
-			"title": "File Transfer",
-			"enabled": 1,
-			"command": "ftransfer/test-plugin.js",
-			"username": "admin",
-			"modified": 1434125333,
-			"created": 1434125333,
-			"params": [
-				{ "id":"filepath", "type":"text", "size":1000, "title":"Source file path", "value": "" },
-				{ "id":"targethost", "type":"text", "size":100, "title":"Target Host", "value": "0.0.0.0/FQDN" },
-				{ "id":"targetfilepath", "type":"text", "size":1000, "title":"Destination path", "value": "" },
-				{ "id":"username", "type":"text", "size":100, "title":"userId", "value": "" },
-				{ "id":"password", "type":"password", "size":100, "title":"password", "value": "" }
-				}
-			]			
-		} ],
 		[ "listCreate", "global/users", { "page_size": 100 } ],
 		[ "listPush", "global/users", { "username": "admin" } ],
 		[ "listCreate", "global/plugins", {} ],
@@ -47,6 +30,22 @@
 				{ "id":"action", "type":"select", "title":"Simulate Action", "items":["Success","Failure","Crash"], "value": "Success" },
 				{ "id":"secret", "type":"hidden", "value":"Will not be shown in Event UI" }
 			]
+		} ],
+		[ "listPush", "global/plugins", {
+			"id": "ftransfer",
+			"title": "File Transfer",
+			"enabled": 1,
+			"command": "ftransfer/test-plugin.js",
+			"username": "admin",
+			"modified": 1434125333,
+			"created": 1434125333,
+			"params": [
+				{ "id":"filepath", "type":"text", "size":1000, "title":"Source file path", "value": "" },
+				{ "id":"targethost", "type":"text", "size":100, "title":"Target Host", "value": "0.0.0.0/FQDN" },
+				{ "id":"targetfilepath", "type":"text", "size":1000, "title":"Destination path", "value": "" },
+				{ "id":"username", "type":"text", "size":100, "title":"userId", "value": "" },
+				{ "id":"password", "type":"password", "size":100, "title":"password", "value": "" }
+			]			
 		} ],
 		[ "listPush", "global/plugins", {
 			"id": "shellplug",
