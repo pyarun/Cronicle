@@ -40,11 +40,11 @@
 			"modified": 1434125333,
 			"created": 1434125333,
 			"params": [
-				{ "id":"filepath", "type":"text", "size":1000, "title":"Source file path", "value": "" },
-				{ "id":"targethost", "type":"text", "size":100, "title":"Target Host", "value": "0.0.0.0/FQDN" },
-				{ "id":"targetfilepath", "type":"text", "size":1000, "title":"Destination path", "value": "" },
-				{ "id":"username", "type":"text", "size":100, "title":"userId", "value": "" },
-				{ "id":"password", "type":"password", "size":100, "title":"password", "value": "" }
+				{ "id":"filepath", "type":"textarea", "rows":3, "title":"Source file path", "value": "" },
+				{ "id":"targethost", "type":"textarea", "row":2, "title":"Target Host", "value": "0.0.0.0/FQDN" },
+				{ "id":"targetfilepath", "type":"textarea", "row":3, "title":"Destination path", "value": "" },
+				{ "id":"username", "type":"text", "size":40, "title":"userId", "value": "" },
+				{ "id":"password", "type":"text", "size":40, "title":"password", "value": "" }
 			]			
 		} ],
 		[ "listPush", "global/plugins", {
