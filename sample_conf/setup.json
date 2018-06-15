@@ -35,7 +35,7 @@
 			"id": "ftransfer",
 			"title": "File Transfer",
 			"enabled": 1,
-			"command": "ftransfer/test-plugin.js",
+			"command": "bin/ftransfer-plugin.js",
 			"username": "admin",
 			"modified": 1434125333,
 			"created": 1434125333,
